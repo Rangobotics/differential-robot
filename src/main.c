@@ -1,5 +1,5 @@
 #include "UnitTests.h"
-#include "math.h"
+// #include "math.h"
 
 int main() {
     Position* robotPosition;
@@ -13,6 +13,8 @@ int main() {
         linearDistance();
         linearDisplacement();
         orientationChange();
+        posUpdate(robotPosition);
+        printPos(robotPosition);
     }
     return 0;
 }
