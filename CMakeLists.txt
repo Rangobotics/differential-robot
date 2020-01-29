@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 11)
 include_directories(include)
 
 # Robot library
-add_library(sim_robot_lib SHARED include/Odometry src/Odometry.c
+add_library(sim_robot_lib SHARED include/Odometry.h src/Odometry.c
                         include/Position.h src/Position.c
                         include/UnitTests.h src/UnitTests.c)
 
